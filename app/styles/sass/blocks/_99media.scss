@@ -1,0 +1,177 @@
+@media (max-width:1200px) {}
+
+
+@media (max-width:992px) {
+  .countries {
+
+    padding: 0;
+
+    .container {
+      flex-wrap: wrap;
+      font-size: 9px;
+
+
+      .country {
+        flex: 0 0 33%;
+        text-align: left;
+        margin: 5px 0;
+
+        &:not(:last-child) {
+          padding-right: 0;
+        }
+
+        &__contacts{
+          font-size: 9px;
+        }
+      }
+    }
+
+  }
+
+  .footer {
+
+    .aboutcompany {
+      flex: 0 0 100%;
+      // .title{
+      //   text-align: center;
+      // }
+
+      // .footer__logo{
+      //   text-align: center;
+      // }
+
+      // .footer__descr{
+      //   text-align: center;
+      // }
+    }
+
+    .modules {
+      flex: 2;
+    }
+
+  }
+}
+
+@media (max-width:768px) {
+
+  .promo {
+    &__list {
+      display: none;
+
+    }
+
+    &__link {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+
+
+
+    .menu_active {
+      display: block;
+      position: fixed;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      padding: 40px;
+      text-align: center;
+      z-index: 1;
+      border-radius: 8px;
+
+      a {
+        color: black;
+
+      }
+
+      .close {
+        padding: 5px;
+
+        svg {
+          width: 20px;
+        }
+
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 9px;
+      }
+    }
+
+    &__hamburger {
+      display: block;
+    }
+
+    
+
+    .overlay {
+      z-index: 1;
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(black, rgba(0, 0, 0, .45));
+
+      &_active {
+        visibility: visible;
+      }
+    }
+
+    // .hamburger_active {
+    //   span {
+    //     margin-bottom: -2px;
+    //   }
+
+    //   span:nth-child(1) {
+    //     transform: translateY(6px) rotate(-45deg);
+    //   }
+
+    //   span:nth-child(2) {
+    //     display: none;
+    //   }
+
+    //   span:nth-child(3) {
+    //     transform: translateY(5.5px) rotate(45deg);
+    //   }
+    // }
+
+
+
+  }
+}
+
+
+@media (max-width:576px) {
+
+  // .center-formob{
+  //   text-align: center;
+  // }
+
+
+  .countries {
+    display: none;
+  }
+
+  .footer {
+
+    &__descr {
+      font-size: 13px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+
+    .industries {
+      margin-right: 20px;
+    }
+
+    .modules {
+      flex: 0 0 100%
+    }
+  }
+}
