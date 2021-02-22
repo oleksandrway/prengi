@@ -1,0 +1,226 @@
+.decisions {
+  text-align: center;
+  background: url(../images/dist/bg/2.jpg) no-repeat 50%/cover;
+
+  &__title {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 900;
+    color: #ffffff;
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 135px;
+  }
+
+
+  &__slider {
+    position: relative;
+    z-index: 1;
+
+    padding: 3% 0;
+    padding-bottom: 10%;
+    
+    // height: 27%; 
+    // max-height: 448.6px;
+    // &::before{
+    //   content:'';
+    //   z-index: -1;
+
+    //   position: absolute;
+    //   top: 3%;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 63%;
+
+    //   height: 79%;
+    // background-color: #fff;
+
+    // }
+    &::after{
+      content:'';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../images/dist/decisions/macbook.png) no-repeat 50%/cover;
+    background-size: 85%;
+    background-position:50% 0;
+
+    }
+
+    &_descr{
+      display: none;
+    }
+  }
+
+  
+
+  &__item {
+    outline: none;
+    z-index: 1;
+    width: 100%;
+    height: 100% ;
+    overflow: hidden;
+    max-height: 490px;
+    height: 37.9vw;
+    position: relative;
+    
+
+
+
+    img {
+      // width: 110%;
+      width: 97%;
+      max-width:730px;
+      height: 105% ;
+      object-fit: cover;
+      padding: 0px 1.5%;
+      // padding-left: 20%;
+      // height: 39.5vw;
+    // height: 37.5vw;
+    // max-height: 450.6px;
+    }
+    video{
+      position: absolute;
+      left: 0;
+      width: 97%;
+    height: 120% ;
+    object-fit: cover;
+    padding: 0px 1.5%;
+
+    }
+
+
+  }
+
+  .slick-list {
+    z-index: 2;
+    margin: 0 auto;
+    width: 64.8%;
+
+    max-height: 448.6px;
+    overflow: hidden;
+
+  }
+
+  .slick-track {
+    z-index: 2;
+
+    display: flex;
+  }
+
+
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 18px;
+    height: 59px;
+    outline: none;
+    border: none;
+    z-index: 2;
+
+    &:hover {
+      transform: translateY(-50%) scale(1.1);
+    }
+  }
+
+  .slick-prev {
+    left: 20px;
+    background: url('../images/dist/decisions/arrow-left.png') no-repeat 50%/cover;
+  }
+
+  .slick-next {
+    right: 20px;
+    background: url('../images/dist/decisions/arrow-right.png') no-repeat 50%/cover;
+  }
+
+
+  .slick-dots {
+    position: absolute;
+    top: -125px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 72%;
+
+
+
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #fff;
+    // padding-left: 3px;
+    padding: 10px;
+
+    li {
+      &:not(:last-child) {
+        border-right: 2px dotted rgba(255, 255, 255, .4);
+      }
+
+      button {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: transparent;
+        border: none;
+        margin: 10px;
+        position: relative;
+        font-size: 0;
+        outline: none;
+
+        &::before {
+          // font-family: 'slick';
+          font-size: 16px;
+          // line-height: 1;
+          //  position: absolute;
+          top: 0;
+          left: 0;
+          // width: 20px;
+          // height: 20px;
+          // content: 'dsfadsf';
+          /* <-- Вот этот символ */
+          text-align: center;
+          color: #fff;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+
+      &:nth-child(1) button::before {
+        content: 'Prengi Production ';
+      }
+
+      &:nth-child(2) button::before {
+        content: 'Prengi FMC';
+      }
+
+      &:nth-child(3) button::before {
+        content: 'Prengi Mallz Retail';
+      }
+
+      &:nth-child(4) button::before {
+        content: 'Prengi Logistic ';
+      }
+
+      &:nth-child(5) button::before {
+        content: 'Prengi IT  ';
+      }
+
+      &:nth-child(6) button::before {
+        content: 'Prengi HR';
+      }
+
+
+
+      &.slick-active button::before {
+        color: #00c2f0;
+      }
+    }
+  }
+}

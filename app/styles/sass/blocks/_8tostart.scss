@@ -1,0 +1,22 @@
+.tostart{
+  &__img{
+    img{
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  &__title{
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 600px;
+  }
+
+  &__btn{
+    margin: 30px auto 2px auto;
+    display: block;
+
+  }
+}

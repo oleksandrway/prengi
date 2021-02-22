@@ -1,0 +1,81 @@
+.fadeInUp{
+  opacity: 0;
+   transform:  translate(0px, 120%);
+    transition: all .8s ease-in-out;
+    &._active,  ._active &  {
+      opacity: 1;
+   transform:  translate(0px, 0px);
+    }
+}
+
+// .anim{
+//   overflow: hidden;
+
+// }
+
+
+
+.fadeInUp2{
+  opacity: 0;
+   transform:  translate(0px, 120%);
+    transition: all .8s ease-in-out .2s ;
+    &._active, ._active & {
+      opacity: 1;
+   transform:  translate(0px, 0px);
+    
+    }
+}
+
+
+.fadeInUp3{
+  opacity: 0;
+   transform:  translate(0px, 120%);
+    transition: all .8s ease-in-out .3s ;
+    &._active, ._active & {
+      opacity: 1;
+   transform:  translate(0px, 0px);
+    
+    }
+}
+
+
+.fadeInLeft{
+  opacity: 0;
+   transform:  translate(-120%, 0px);
+    transition: all .8s ease .5s ;
+    &._active,  ._active &  {
+      opacity: 1;
+   transform:  translate(0px, 0px);
+    }
+}
+
+.fadeInRight{
+  opacity: 0;
+   transform:  translate(120%, 0px);
+    transition: all .8s  ease .5s;
+    &._active,  ._active &  {
+      opacity: 1;
+   transform:  translate(0px, 0px);
+    }
+}
+
+.fadeIn{
+  opacity: 0;
+    transition: all 1.2s ease .3s;
+    &._active,  ._active &  {
+      opacity: 1;
+    }
+}
+
+
+.fadeInDot{
+  opacity: 0;
+   transform:  scale(0);
+    transition: all .8s ;
+    &._active,  ._active &  {
+      opacity: 1;
+   transform:  scale(1);
+    }
+}
+
+
